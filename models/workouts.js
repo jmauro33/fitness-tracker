@@ -6,11 +6,11 @@ const workoutSchema = new Schema({
     name: {
       type: String,
       trim: true,
-      required: "Enter a name for transaction"
+      required: ""
     },
     value: {
       type: Number,
-      required: "Enter an amount"
+      required: ""
     },
     date: {
       type: Date,
