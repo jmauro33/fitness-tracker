@@ -6,11 +6,11 @@ const workoutSchema = new Schema({
     name: {
       type: String,
       trim: true,
-      required: ""
+      required: "exercise-type"
     },
     value: {
       type: Number,
-      required: ""
+      required: "# of reps"
     },
     date: {
       type: Date,
