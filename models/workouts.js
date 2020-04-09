@@ -10,7 +10,7 @@ const workoutSchema = new Schema({
     },
     value: {
       type: Number,
-      required: "# of reps"
+      required: "enter workout stats"
     },
     date: {
       type: Date,
