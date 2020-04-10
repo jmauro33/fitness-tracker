@@ -16,8 +16,7 @@ router.put("/api/workouts/:id", (req, res) => {
 
     console.log("params",req.params);
     console.log("body",req.body);
-    return
-    Workout.findByIdAndUpdate(
+  return  Workout.findByIdAndUpdate(
         req.params.id,
         {}
     )
@@ -28,11 +27,11 @@ router.put("/api/workouts/:id", (req, res) => {
         res.status(400).json(err);
       });
   });
-  router.post("/api/workouts", ({ body }, res) => {
+  router.post("/api/workouts", (req, res) => {
     console.log("params",req.params);
     console.log("body",req.body);
-    return
-    Workout.create(body)
+ 
+    return Workout.create(req.body)
       .then(dbWorkout => {
         res.json(dbWorkout);
       })
