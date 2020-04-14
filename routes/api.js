@@ -28,7 +28,7 @@ router.put("/api/workouts/:id", (req, res) => {
       });
   });
   router.post("/api/workouts", (req, res) => {
-    console.log("params",req.params);
+   
     console.log("body",req.body);
  
     return Workout.create(req.body)
